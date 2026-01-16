@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Entschuldigung</title>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #ffc0cb;
+    color: #4B2E2E;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pusheen-top, .pusheen-end {
+    display: block;
+    margin: 20px auto;
+  }
+
+  .content-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+  }
+
+  .side-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+  }
+
+  .side-images img {
+    width: 50px;
+    margin: 10px 0;
+  }
+
+  .content {
+    background: rgba(255, 182, 193, 0.6);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255,0,100,0.3);
+    line-height: 1.6;
+    text-align: justify;
+    max-width: 600px;
+  }
+
+  .text-end {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+
+  .text-small {
+    text-align: center;
+    font-size: 0.9em;
+    color: #660000;
+    margin-bottom: 40px;
+  }
+
+  @media(max-width: 600px) {
+    .content-wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+    .side-images {
+      flex-direction: row;
+      margin: 10px 0;
+    }
+    .side-images img {
+      width: 40px;
+      margin: 0 5px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- Musik -->
+<audio autoplay loop>
+  <source src="be-quiet-and-drive.mp3" type="audio/mpeg">
+  Dein Browser unterstützt keine Musik.
+</audio>
+
+<!-- Pusheen oben -->
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Pusheen_cat.svg/800px-Pusheen_cat.svg.png" alt="Traurige Pusheen" class="pusheen-top" width="200">
+
+<!-- Content mit Herz und Rosen an den Seiten -->
+<div class="content-wrapper">
+  
+  <!-- Linke Seite -->
+  <div class="side-images">
+    <img src="https://cdn.pixabay.com/photo/2016/04/01/10/42/heart-1309439_960_720.png" alt="Herz">
+    <img src="https://cdn.pixabay.com/photo/2017/01/31/14/53/rose-2022730_960_720.png" alt="Rose">
+    <img src="https://cdn.pixabay.com/photo/2016/04/01/10/42/heart-1309439_960_720.png" alt="Herz">
+  </div>
+
+  <!-- Text Mitte -->
+  <div class="content">
+    <p>Es tut mir leid... [hier dein Text einfügen, wie vorher korrigiert]</p>
+  </div>
+
+  <!-- Rechte Seite -->
+  <div class="side-images">
+    <img src="https://cdn.pixabay.com/photo/2017/01/31/14/53/rose-2022730_960_720.png" alt="Rose">
+    <img src="https://cdn.pixabay.com/photo/2016/04/01/10/42/heart-1309439_960_720.png" alt="Herz">
+    <img src="https://cdn.pixabay.com/photo/2017/01/31/14/53/rose-2022730_960_720.png" alt="Rose">
+  </div>
+
+</div>
+
+<!-- Pusheen Ende -->
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Pusheen_cat.svg/800px-Pusheen_cat.svg.png" alt="Pusheen I Miss My Girlfriend" class="pusheen-end" width="250">
+<div class="text-end">I Miss My Girlfriend</div>
+<div class="text-small">Wirst du mich bitte verzeihen?</div>
+
+</body>
+</html>
